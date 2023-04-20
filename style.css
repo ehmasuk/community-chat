@@ -148,6 +148,9 @@ p{
     margin-left: 200px;
     justify-content: flex-end;
 }
+.chat-body-to .time{
+    text-align: right !important;
+}
 .chat-body-to .chat-body-img img{
     height: 45px;
     width: 45px;
