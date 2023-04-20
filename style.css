@@ -16,11 +16,40 @@
 p{
     margin-bottom: 0;
 }
+.chat-left-bar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 4px 4px rgba(66, 11, 161, 0.2);
+    text-align: center;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.chat-left-bar i{
+    font-size: 18px;
+    padding: 10px;
+    margin-bottom: 35px;
+    display: block;
+    background-color: #F4F4FA;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.chat-left-bar img{
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
 .recent-chat-wraper{
     padding: 20px;
     max-height: 100vh;
     overflow: auto;
     border-right: 1px solid #eee;
+    width: 100%;
 }
 .recent-chat-wraper .chat-title{
     font-weight: 600;
@@ -115,7 +144,8 @@ p{
 .chat-body-to{
     display: flex;
     align-items: flex-end;
-    text-align: right;
+    text-align: justify;
+    margin-left: 200px;
     justify-content: flex-end;
 }
 .chat-body-to .chat-body-img img{
@@ -205,12 +235,28 @@ p{
     box-shadow: 0px 4px 4px #F5F8FF;
     border-radius: 175px;
     height: 55px;
-    padding: 10px 70px;
+    padding:10px 70px 10px 110px;
     outline: none;
 }
 .chat-input-main-wraper .main-submit{
     position: absolute;
-    right: 25px;
+    right: 15px;
+    top: 10px;
+    z-index: 2;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #794EDA;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    align-items: center;
+}
+.chat-input-main-wraper .fa-smile{
+    position: absolute;
+    left: 20px;
     top: 18px;
     z-index: 2;
     font-size: 20px;
@@ -218,7 +264,7 @@ p{
 }
 .chat-input-main-wraper .main-attach{
     position: absolute;
-    left: 25px;
+    left: 65px;
     top: 18px;
     z-index: 2;
     font-size: 20px;
