@@ -17,17 +17,17 @@
             <div class="container-fluid">
                 <div class="row">
 
-                    <div class="col-4 pl-0">
+                    <div class="col-3 pl-0">
 
                         <div class="d-flex">
                             <div class="chat-left-bar">
-                                <di>
+                                <div>
                                     <i class="fas fa-comment-alt"></i>
                                     <i class="fas fa-users"></i>
                                     <i class="fas fa-newspaper"></i>
                                     <i class="fas fa-phone-alt"></i>
                                     <i class="fas fa-cog"></i>
-                                </di>
+                                </div>
                                 <div >
                                     <i class="fas fa-plus-circle"></i>
                                     <i class="fas fa-layer-group"></i>
@@ -136,8 +136,8 @@
 
 
 
-                    <div class="chat-body-wraper col-md-8">
-                        <div class="chat-body-wraper">
+                    <div class="chat-body-wraper col-md-9">
+                        <div class="chat-body-inner">
 
                             <div class="chat-body-title-bar">
                                 <div class="d-flex">
@@ -145,50 +145,34 @@
                                         <img src="https://dreamschat.dreamguystech.com/template-laravel/template2/public/assets/img/avatar/avatar-8.jpg" alt="">
                                     </div>
                                     <div class="chat-body-user-name">
-                                        <div class="c-name">Olivia</div>
+                                        <div class="c-name">Umer</div>
                                         <div class="c-status">online</div>
                                     </div>
                                 </div>
                                 <div class="top-bar-icons">
-                                    <i class="fas fa-user"></i>
-                                    <i class="fas fa-video"></i>
-                                    <i class="fas fa-phone-alt"></i>
+                                    <span><i class="fas fa-video"></i></span>
+                                    <span><i class="fas fa-phone-alt"></i></span>
+                                    <span onclick="toggleProfileInfo()"><i class="fas fa-user"></i></span>
                                 </div>
                             </div>
 
 
                             <div class="chats-inside-wraper">
-                                
-                                <div class="chat-body-from">
-                                    <div class="chat-body-img">
-                                        <img src="https://dreamschat.dreamguystech.com/template-laravel/template2/public/assets/img/avatar/avatar-8.jpg" alt="">
-                                    </div>
-                                    <div class="chat-body-chat">
-                                        <p class="chat-body-chat-main">
-                                            Hi umer
-                                            <span class="time">1:00</span>
-                                        </p>
-                                        <p class="chat-body-chat-main">
-                                            How are you today?
-                                            <span class="time">2:00</span>
-                                        </p>
-                                        <p class="chat-body-chat-main">
-                                            i'm good, what about you?
-                                            <span class="time">3:00</span>
-                                        </p>
-    
-                                        <p class="chat-body-chat-name">Olivia</p>
-                                    </div>
-                                </div>
-    
+
+
+
                                 <div class="chat-body-to">
                                     <div class="chat-body-chat">
                                         <p class="chat-body-chat-main">
-                                            Good
+                                            Hi umer how are you?
                                             <span class="time">3:00</span>
                                         </p>
+                                        <p class="chat-body-chat-main">
+                                        Hope you are well
+                                            <span class="time">3:10</span>
+                                        </p>
     
-                                        <p class="chat-body-chat-name">Ummer fayez</p>
+                                        <p class="chat-body-chat-name">Me</p>
                                     </div>
                                     <div class="chat-body-img">
                                         <img src="https://dreamschat.dreamguystech.com/template-laravel/template2/public/assets/img/avatar/avatar-8.jpg" alt="">
@@ -206,67 +190,22 @@
                                     </div>
                                     <div class="chat-body-chat">
                                         <p class="chat-body-chat-main">
-                                            owwwwwww
-                                            <span class="time">2:00</span>
-                                        </p>
-                                        <p class="chat-body-chat-main">
-                                            NIce to hear that
-                                            <span class="time">4:00</span>
-                                        </p>
-    
-                                        <p class="chat-body-chat-name">Olivia</p>
-                                    </div>
-                                </div>
-    
-                                <div class="chat-body-to">
-                                    <div class="chat-body-chat">
-                                        <p class="chat-body-chat-main">
-                                            Thanks
-                                            <span class="time">3:00</span>
-                                        </p>
-    
-                                        <p class="chat-body-chat-name">Ummer fayez</p>
-                                    </div>
-                                    <div class="chat-body-img">
-                                        <img src="https://dreamschat.dreamguystech.com/template-laravel/template2/public/assets/img/avatar/avatar-8.jpg" alt="">
-                                    </div>
-                                </div>
-
-
-
-
-
-                                <div class="chat-body-from">
-                                    <div class="chat-body-img">
-                                        <img src="https://dreamschat.dreamguystech.com/template-laravel/template2/public/assets/img/avatar/avatar-8.jpg" alt="">
-                                    </div>
-                                    <div class="chat-body-chat">
-                                        <p class="chat-body-chat-main">
-                                            Ok
+                                            Hi, i am good what about you?
                                             <span class="time">1:00</span>
                                         </p>
                                         <p class="chat-body-chat-main">
-                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, optio?
+                                            What about your family?
                                             <span class="time">2:00</span>
                                         </p>
     
-                                        <p class="chat-body-chat-name">Olivia</p>
+                                        <p class="chat-body-chat-name">Umer</p>
                                     </div>
                                 </div>
     
-                                <div class="chat-body-to">
-                                    <div class="chat-body-chat">
-                                        <p class="chat-body-chat-main">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique non recusandae veritatis molestiae quaerat architecto Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi, impedit voluptates iusto saepe qui labore delectus praesentium atque nemo corrupti quasi eius beatae libero veritatis possimus fugit deserunt doloremque modi, ipsa ex autem? In, consectetur unde. Culpa distinctio odit provident qui incidunt at minus vitae ipsam. Porro aliquam quasi vel?
-                                            <span class="time">3:00</span>
-                                        </p>
+
+
     
-                                        <p class="chat-body-chat-name">Ummer fayez</p>
-                                    </div>
-                                    <div class="chat-body-img">
-                                        <img src="https://dreamschat.dreamguystech.com/template-laravel/template2/public/assets/img/avatar/avatar-8.jpg" alt="">
-                                    </div>
-                                </div>
+
 
 
                             </div>
@@ -285,6 +224,74 @@
 
 
                         </div>
+
+
+
+                        <div class="chat-profile-inner">
+                            <div class="chat-profile-info">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <b>PROFILE</b>
+                                    <span onclick="toggleProfileInfo()" class="close-info">
+                                        <i class="fas fa-times"></i>
+                                    </span>
+                                </div>
+                                <div class="profile-imgs">
+                                    <img src="https://dreamschat.dreamguystech.com/template-laravel/template2/public/assets/img/avatar/avatar-8.jpg" alt="">
+                                    <p class="user-name">Umer fayez</p>
+                                    <p class="user-status"><i class="fas fa-circle online"></i> Online</p>
+                                </div>
+                                <div class="toggle-options">
+                                    <div class="bar">
+                                        <span onclick="aboutToggleFunc()" class="mr-3 about-btn active">About</span>
+                                        <span onclick="mediaToggleFunc()" class="mr-3 media-btn">Media</span>
+                                    </div>
+                                    <div class="about-section">
+                                        <p class="des">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos repellendus necessitatibus delectus repellat ullam sint dolore eligendi</p>
+                                        <div class="mt-3">
+                                            <b>Phone</b>
+                                            <p>555-555-21541</p>
+                                        </div>
+                                        <div class="mt-3">
+                                            <b>Nick Name</b>
+                                            <p>Bablu</p>
+                                        </div>
+                                        <div class="mt-3">
+                                            <b>Email</b>
+                                            <p>umer@gmail.com</p>
+                                        </div>
+                                        <div class="mt-3">
+                                            <b>Social media accounts</b>
+                                            <div>
+                                                <a href=""><i class="fab fa-facebook-f"></i></a>
+                                                <a href=""><i class="fab fa-twitter"></i></a>
+                                                <a href=""><i class="fab fa-instagram"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="settings mt-4">
+                                            <b>Settings</b>
+                                            <div class="custom-control custom-switch">
+                                                <input type="checkbox" class="custom-control-input" id="blockUser">
+                                                <label class="custom-control-label" for="blockUser">Block</label>
+                                            </div>
+                                            <div class="custom-control custom-switch">
+                                                <input type="checkbox" class="custom-control-input" id="muteUser">
+                                                <label class="custom-control-label" for="muteUser">Mute</label>
+                                            </div>
+                                        </div>
+                                        <div class="user-options mt-4">
+                                            <p><i class="fas fa-exclamation-triangle mb-3"></i>Report Chat</p>
+                                            <p><i class="fas fa-trash-alt"></i>Delete Chat</p>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="media-section">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto deserunt omnis voluptate, quo officia quas. Magni animi culpa quis corporis!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
                     </div>
 
 
@@ -305,7 +312,39 @@
 
 
         <script>
-            $('.chats-inside-wraper')[0].scrollTop = $('.chats-inside-wraper')[0].scrollHeight
+            $('.chats-inside-wraper')[0].scrollTop = $('.chats-inside-wraper')[0].scrollHeight;
+
+
+            const aboutToggleFunc = ()=>{
+                //
+                document.querySelector('.chat-profile-info .toggle-options .bar .media-btn').classList.remove('active');
+                document.querySelector('.chat-profile-info .toggle-options .bar .about-btn').classList.add('active');
+                // 
+                // 
+                document.querySelector('.chat-profile-info .toggle-options .about-section').style.display = 'block';
+                document.querySelector('.chat-profile-info .toggle-options .media-section').style.display = 'none';
+                // 
+            }
+            const mediaToggleFunc = ()=>{
+                //
+                document.querySelector('.chat-profile-info .toggle-options .bar .about-btn').classList.remove('active');
+                document.querySelector('.chat-profile-info .toggle-options .bar .media-btn').classList.add('active');
+                //
+                // 
+                document.querySelector('.chat-profile-info .toggle-options .about-section').style.display = 'none';
+                document.querySelector('.chat-profile-info .toggle-options .media-section').style.display = 'block';
+                // 
+            }
+
+
+            const toggleProfileInfo = ()=>{
+                document.querySelector('.chat-profile-inner').classList.toggle('show-profile-info')
+            }
+            const removeProfileInfo = ()=>{
+                document.querySelector('.chat-profile-inner').classList.remove('show-profile-info')
+            }
+
+
         </script>
 
 
