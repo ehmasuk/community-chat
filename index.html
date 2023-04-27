@@ -22,10 +22,8 @@
                         <div class="d-flex">
                             <div class="chat-left-bar">
                                 <div>
-                                    <i class="fas fa-comment-alt"></i>
-                                    <i class="fas fa-users"></i>
-                                    <i class="fas fa-newspaper"></i>
-                                    <i class="fas fa-phone-alt"></i>
+                                    <i onclick="showRecentChat()" class="fas fa-comment-alt"></i>
+                                    <i onclick="showRecentGroup()" class="fas fa-users"></i>
                                     <i class="fas fa-cog"></i>
                                 </div>
                                 <div >
@@ -38,90 +36,188 @@
                             </div>
 
 
-                            <div class="recent-chat-wraper">
-                                <div class="chat-title">
-                                    <p>RECENT CHATS</p>
-                                </div>
-                                <div class="recent-chats">
-        
-        
-        
-        
-        
-        
-                                    <div class="single-recent-chat">
-                                        <div class="chat-recent-user-img">
-                                            <img src="https://dreamschat.dreamguystech.com/template-laravel/template2/public/assets/img/avatar/avatar-8.jpg" alt="">
-                                        </div>
-                                        <div class="w-100">
-                                            <div class="recent-main-chat-wraper">
-                                                <p class="chat-user">Regina Dickerson</p>
-                                                <p class="chat-date">Yesterday</p>
-                                            </div>
-                                            <div class="recent-main-chat-wraper">
-                                                <p class="recent-chat-chat">Hi, Good day</p>
-                                                <!-- <p>11</p> -->
-                                            </div>
-                                        </div>
+                            <div class="recent-chat">
+
+                                <div class="recent-chat-wraper">
+                                    <div class="chat-title">
+                                        <p>RECENT CHATS</p>
                                     </div>
-                                    <div class="single-recent-chat">
-                                        <div class="chat-recent-user-img">
-                                            <img src="https://dreamschat.dreamguystech.com/template-laravel/template2/public/assets/img/avatar/avatar-8.jpg" alt="">
-                                        </div>
-                                        <div class="w-100">
-                                            <div class="recent-main-chat-wraper">
-                                                <p class="chat-user">Dickerson</p>
-                                                <p class="chat-date">5m</p>
+                                    <div class="recent-chats">
+            
+            
+            
+            
+            
+            
+                                        <div class="single-recent-chat">
+                                            <div class="chat-recent-user-img">
+                                                <img src="https://dreamschat.dreamguystech.com/template-laravel/template2/public/assets/img/avatar/avatar-8.jpg" alt="">
                                             </div>
-                                            <div class="recent-main-chat-wraper">
-                                                <p class="recent-chat-chat">Good day</p>
-                                                <!-- <p>11</p> -->
+                                            <div class="w-100">
+                                                <div class="recent-main-chat-wraper">
+                                                    <p class="chat-user">Regina Dickerson</p>
+                                                    <p class="chat-date">Yesterday</p>
+                                                </div>
+                                                <div class="recent-main-chat-wraper">
+                                                    <p class="recent-chat-chat">Hi, Good day</p>
+                                                    <!-- <p>11</p> -->
+                                                </div>
                                             </div>
                                         </div>
+                                        <div class="single-recent-chat">
+                                            <div class="chat-recent-user-img">
+                                                <img src="https://dreamschat.dreamguystech.com/template-laravel/template2/public/assets/img/avatar/avatar-8.jpg" alt="">
+                                            </div>
+                                            <div class="w-100">
+                                                <div class="recent-main-chat-wraper">
+                                                    <p class="chat-user">Dickerson</p>
+                                                    <p class="chat-date">5m</p>
+                                                </div>
+                                                <div class="recent-main-chat-wraper">
+                                                    <p class="recent-chat-chat">Good day</p>
+                                                    <!-- <p>11</p> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="single-recent-chat">
+                                            <div class="chat-recent-user-img">
+                                                <img src="https://dreamschat.dreamguystech.com/template-laravel/template2/public/assets/img/avatar/avatar-8.jpg" alt="">
+                                            </div>
+                                            <div class="w-100">
+                                                <div class="recent-main-chat-wraper">
+                                                    <p class="chat-user">Dickerson</p>
+                                                    <p class="chat-date">5m</p>
+                                                </div>
+                                                <div class="recent-main-chat-wraper">
+                                                    <p class="recent-chat-chat"><i class="fas fa-image mr-1"></i>Photo</p>
+                                                    <!-- <p>11</p> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="single-recent-chat">
+                                            <div class="chat-recent-user-img">
+                                                <img src="https://dreamschat.dreamguystech.com/template-laravel/template2/public/assets/img/avatar/avatar-8.jpg" alt="">
+                                            </div>
+                                            <div class="w-100">
+                                                <div class="recent-main-chat-wraper">
+                                                    <p class="chat-user">Dickerson</p>
+                                                    <p class="chat-date">5m</p>
+                                                </div>
+                                                <div class="recent-main-chat-wraper">
+                                                    <p class="recent-chat-chat"><i class="fas fa-video mr-1"></i>Video</p>
+                                                    <!-- <p>11</p> -->
+                                                </div>
+                                            </div>
+                                        </div>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                                        
                                     </div>
-                                    <div class="single-recent-chat">
-                                        <div class="chat-recent-user-img">
-                                            <img src="https://dreamschat.dreamguystech.com/template-laravel/template2/public/assets/img/avatar/avatar-8.jpg" alt="">
-                                        </div>
-                                        <div class="w-100">
-                                            <div class="recent-main-chat-wraper">
-                                                <p class="chat-user">Dickerson</p>
-                                                <p class="chat-date">5m</p>
-                                            </div>
-                                            <div class="recent-main-chat-wraper">
-                                                <p class="recent-chat-chat"><i class="fas fa-image mr-1"></i>Photo</p>
-                                                <!-- <p>11</p> -->
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="single-recent-chat">
-                                        <div class="chat-recent-user-img">
-                                            <img src="https://dreamschat.dreamguystech.com/template-laravel/template2/public/assets/img/avatar/avatar-8.jpg" alt="">
-                                        </div>
-                                        <div class="w-100">
-                                            <div class="recent-main-chat-wraper">
-                                                <p class="chat-user">Dickerson</p>
-                                                <p class="chat-date">5m</p>
-                                            </div>
-                                            <div class="recent-main-chat-wraper">
-                                                <p class="recent-chat-chat"><i class="fas fa-video mr-1"></i>Video</p>
-                                                <!-- <p>11</p> -->
-                                            </div>
-                                        </div>
-                                    </div>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                                    
                                 </div>
                             </div>
+
+
+
+
+                            <div class="recent-group">
+
+                                <div class="recent-chat-wraper">
+                                    <div class="chat-title">
+                                        <p>Groups</p>
+                                    </div>
+                                    <div class="recent-chats">
+            
+            
+            
+            
+            
+            
+                                        <div class="single-recent-chat">
+                                            <div class="chat-recent-user-img">
+                                                <img src="https://dreamschat.dreamguystech.com/template-laravel/template2/public/assets/img/group-4.jpg" alt="">
+                                            </div>
+                                            <div class="w-100">
+                                                <div class="recent-main-chat-wraper">
+                                                    <p class="chat-user">#Family</p>
+                                                    <p class="chat-date">20 min</p>
+                                                </div>
+                                                <div class="recent-main-chat-wraper">
+                                                    <p class="recent-chat-chat"> <b>Ricky : </b> everyone</p>
+                                                    <!-- <p>11</p> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="single-recent-chat">
+                                            <div class="chat-recent-user-img">
+                                                <img src="https://dreamschat.dreamguystech.com/template-laravel/template2/public/assets/img/group-4.jpg" alt="">
+                                            </div>
+                                            <div class="w-100">
+                                                <div class="recent-main-chat-wraper">
+                                                    <p class="chat-user">#Office</p>
+                                                    <p class="chat-date">5m</p>
+                                                </div>
+                                                <div class="recent-main-chat-wraper">
+                                                    <p class="recent-chat-chat"> <b>Umer : </b> Hola</p>
+                                                    <!-- <p>11</p> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="single-recent-chat">
+                                            <div class="chat-recent-user-img">
+                                                <img src="https://dreamschat.dreamguystech.com/template-laravel/template2/public/assets/img/group-4.jpg" alt="">
+                                            </div>
+                                            <div class="w-100">
+                                                <div class="recent-main-chat-wraper">
+                                                    <p class="chat-user">#Learning</p>
+                                                    <p class="chat-date">5m</p>
+                                                </div>
+                                                <div class="recent-main-chat-wraper">
+                                                    <p class="recent-chat-chat"><i class="fas fa-video mr-1"></i>Video</p>
+                                                    <!-- <p>11</p> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="single-recent-chat">
+                                            <div class="chat-recent-user-img">
+                                                <img src="https://dreamschat.dreamguystech.com/template-laravel/template2/public/assets/img/group-4.jpg" alt="">
+                                            </div>
+                                            <div class="w-100">
+                                                <div class="recent-main-chat-wraper">
+                                                    <p class="chat-user">#Farmhouse</p>
+                                                    <p class="chat-date">5m</p>
+                                                </div>
+                                                <div class="recent-main-chat-wraper">
+                                                    <p class="recent-chat-chat"><i class="fas fa-image mr-1"></i>Photo</p>
+                                                    <!-- <p>11</p> -->
+                                                </div>
+                                            </div>
+                                        </div>
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+
+
 
 
 
@@ -136,7 +232,7 @@
 
 
 
-                    <div class="chat-body-wraper col-md-9">
+                    <div class="chat-body-wraper col-9">
                         <div class="chat-body-inner">
 
                             <div class="chat-body-title-bar">
@@ -306,6 +402,10 @@
 
 
 
+
+
+
+
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
 
 
@@ -343,6 +443,28 @@
             const removeProfileInfo = ()=>{
                 document.querySelector('.chat-profile-inner').classList.remove('show-profile-info')
             }
+
+
+
+
+
+
+            const showRecentChat = ()=>{
+                document.querySelector('.recent-group').style.display = 'none';
+                document.querySelector('.recent-chat').style.display = 'block';
+            }
+            const showRecentGroup = ()=>{
+                document.querySelector('.recent-chat').style.display = 'none';
+                document.querySelector('.recent-group').style.display = 'block';
+            }
+
+
+
+
+
+
+
+
 
 
         </script>

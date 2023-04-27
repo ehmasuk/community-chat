@@ -427,3 +427,16 @@ p{
     font-weight: 500;
     cursor: pointer;
 }
+
+.recent-chat{
+    width: 100%;
+}
+.recent-group{
+    width: 100%;
+    display: none;
+}
+@media only screen and (max-width:800px) {
+    .chat-left-bar{
+        display: none;
+    }
+}

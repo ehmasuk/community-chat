@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="Description" content="Enter your description here" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <title>popup</title>
+        <style>
+
+
+
+            p{
+                margin: 0;
+            }
+
+
+            .chat-popup-box{
+                position: fixed;
+                right: 200px;
+                bottom: 0;
+            }
+            .chat-popup-inner{
+                position: relative;
+                height: 550px;
+                width: 400px;
+                border-radius: 10px 10px 0 0;
+                overflow: hidden;
+                border: 1px solid #eee;
+            }
+            .chat-popup-inner .header{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: #794EDA;
+                padding: 10px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 10;
+                width: 100%;
+                color: #fff;
+            }
+            .chat-popup-inner .header i{
+                font-size: 30px;
+                margin-right: 10px;
+                cursor: pointer;
+            }
+            .chat-popup-inner .header .pro-name{
+                display: flex;
+                align-items: center;
+            }
+            .chat-popup-inner .header .pro-name img{
+                margin-right: 10px;
+                height: 45px;
+                width: 45px;
+                border-radius: 50%;
+            }
+            .chat-popup-inner .header .pro-name p{
+                font-weight: 600;
+                font-size: 18px;
+            }
+
+.direct-msg-inner{
+    position: relative;
+    width: 100%;
+}
+.direct-msg-inner .main-input{
+    position: absolute;
+    width: 100%;
+    background: #FFFFFF;
+    border: 1px solid #F4EEFF;
+    box-shadow: 0px 4px 4px #F5F8FF;
+    /* border-radius: 175px; */
+    height: 50px;
+    padding:10px 70px 10px 90px;
+    outline: none;
+}
+.direct-msg-inner .main-submit{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 2;
+    font-size: 17px;
+    cursor: pointer;
+    background-color: #794EDA;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    align-items: center;
+}
+.direct-msg-inner .fa-smile{
+    position: absolute;
+    left: 15px;
+    top: 14px;
+    z-index: 2;
+    font-size: 20px;
+    cursor: pointer;
+}
+.direct-msg-inner .fa-smile:hover{
+    color: tomato;
+}
+.direct-msg-inner .main-attach:hover{
+    color: tomato;
+}
+.direct-msg-inner .main-attach{
+    position: absolute;
+    left: 55px;
+    top: 14px;
+    z-index: 2;
+    font-size: 20px;
+    cursor: pointer;
+}
+.chat-popup-inner .footer{
+    position: absolute;
+    left: 0;
+    bottom: 50px;
+    width: 100%;
+}
+
+
+        </style>
+    </head>
+    <body>
+
+        <div class="chat-popup-box">
+
+
+
+            <div class="chat-popup-inner">
+
+                <div class="header">
+                    <div class="pro-name">
+                        <img src="https://dreamschat.dreamguystech.com/template-laravel/template2/public/assets/img/avatar/avatar-8.jpg" alt="">
+                        <p>Umer fayez</p>
+                    </div>
+                    <div class="pro-options">
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+
+                <div class="body">
+
+                </div>
+
+
+
+                <div class="footer">
+                    <div class="direct-msg-inner">
+                        <i class="far fa-smile"></i>
+                        <i class="fas fa-paperclip main-attach"></i>
+                        <input class="main-input" type="text" placeholder="Enter your message...">
+                        <i class="fas fa-paper-plane main-submit"></i>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+
+    </body>
+</html>
