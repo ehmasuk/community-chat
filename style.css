@@ -35,6 +35,7 @@ p{
     height: 100vh;
     overflow-x: hidden;
     overflow-y: auto;
+    min-width: 60px;
 }
 .chat-left-bar i{
     font-size: 18px;
@@ -53,7 +54,7 @@ p{
 }
 .recent-chat-wraper{
     padding: 20px;
-    max-height: 100vh;
+    height: 100vh;
     overflow: auto;
     border-right: 1px solid #eee;
     width: 100%;
@@ -201,7 +202,7 @@ p{
 .chats-inside-wraper{
     padding: 10px;
     overflow: auto;
-    height: 85vh;
+    height: 80vh;
     padding-bottom: 50px;
 }
 
@@ -435,8 +436,20 @@ p{
     width: 100%;
     display: none;
 }
-@media only screen and (max-width:800px) {
+@media only screen and (max-width:1200px) {
     .chat-left-bar{
         display: none;
+    }
+}
+@media only screen and (max-width:960px) {
+    .chat-profile-inner{
+        display: none;
+    }
+    .recent-chat-wraper{
+        width: 120px;
+        overflow-x: hidden;
+    }
+    .chat-body-to{
+        margin-left: 0;
     }
 }
