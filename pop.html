@@ -16,12 +16,12 @@
             p{
                 margin: 0;
             }
-
-
             .chat-popup-box{
                 position: fixed;
                 right: 200px;
                 bottom: 0;
+                z-index: 99;
+                background-color: #fff;
             }
             .chat-popup-inner{
                 position: relative;
@@ -44,6 +44,32 @@
                 width: 100%;
                 color: #fff;
             }
+            .chat-popup-inner .header .group-img{
+                width: 60px;
+                height: 100%;
+            }
+            .chat-popup-inner .header .group-img img{
+                position: absolute;
+                height: 30px !important;
+                width: 30px !important;
+                border-radius: 50%;
+                padding: 2px;
+                background-color: #fff;
+            }
+            .chat-popup-inner .header .group-img img:nth-child(1){
+                left: 10px;
+                bottom: 5px;
+                z-index: 10;
+            }
+            .chat-popup-inner .header .group-img img:nth-child(2){
+                left: 25px;
+                top: 5px;
+                z-index: 5;
+            }
+
+
+
+
             .chat-popup-inner .header i{
                 font-size: 30px;
                 margin-right: 10px;
@@ -123,22 +149,67 @@
     bottom: 50px;
     width: 100%;
 }
+.chat-popup-inner .body{
+    height: 100%;
+    overflow: auto;
+    padding: 70px 10px;
+}
+.chat-popup-inner .body .incomming-msg{
+    display: flex;
+    align-items: flex-end;
+    margin-top: 15px;
+}
+.chat-popup-inner .body .incomming-msg img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.chat-popup-inner .body .incomming-msg>div p{
+    background-color: #794EDA;
+    padding: 10px 15px;
+    border-radius: 20px;
+    color: #fff;
+    margin-top: 5px;
+    display: inline-block;
+}
+.chat-popup-inner .body .outgoing-msg{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: justify;
+    justify-content: flex-end;
+    margin-top: 15px;
+}
+.chat-popup-inner .body .outgoing-msg p{
+    background-color: #E4E6EB;
+    padding: 10px 15px;
+    border-radius: 20px;
+    color: #232323;
+    margin-top: 5px;
+}
 
 
         </style>
     </head>
     <body>
 
+
+
+
+
+
+
         <div class="chat-popup-box">
-
-
-
             <div class="chat-popup-inner">
 
                 <div class="header">
                     <div class="pro-name">
-                        <img src="https://dreamschat.dreamguystech.com/template-laravel/template2/public/assets/img/avatar/avatar-8.jpg" alt="">
-                        <p>Umer fayez</p>
+                        <div class="group-img">
+                            <img src="https://dreamschat.dreamguystech.com/template-laravel/template2/public/assets/img/avatar/avatar-8.jpg" alt="">
+                            <img src="https://dreamschat.dreamguystech.com/template-laravel/template2/public/assets/img/avatar/avatar-12.jpg" alt="">
+                        </div>
+                        <p>Escribe una novela</p>
                     </div>
                     <div class="pro-options">
                         <i class="fas fa-times"></i>
@@ -147,9 +218,29 @@
 
                 <div class="body">
 
+                    <div class="incomming-msg">
+                        <img src="https://dreamschat.dreamguystech.com/template-laravel/template2/public/assets/img/avatar/avatar-8.jpg" alt="">
+                        <div>
+                            <div><p>Hi</p></div>
+                            <div><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, quis?</p></div>
+                        </div>
+                    </div>
+                    <div class="outgoing-msg">
+                        <p>Hello, i am good.</p>
+                        <p>What about yourself</p>
+                    </div>
+                    <div class="incomming-msg">
+                        <img src="https://dreamschat.dreamguystech.com/template-laravel/template2/public/assets/img/avatar/avatar-12.jpg" alt="">
+                        <div>
+                            <p>I am also good thanks</p>
+                            
+                        </div>
+                    </div>
+                    <div class="outgoing-msg">
+                        <p>Ok</p>
+                    </div>
+
                 </div>
-
-
 
                 <div class="footer">
                     <div class="direct-msg-inner">
@@ -160,12 +251,61 @@
                     </div>
                 </div>
 
+            </div>
+        </div>
 
+
+
+
+
+        <div class="chat-popup-box">
+            <div class="chat-popup-inner">
+
+                <div class="header">
+                    <div class="pro-name">
+                        <img src="" alt="">
+                        <p>Umer fayez</p>
+                    </div>
+                    <div class="pro-options">
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+
+                <div class="body">
+
+                    <div class="incomming-msg">
+                        <img src="" alt="">
+                        <div>
+                            <div><p>Hi</p></div>
+                            <div><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, quis?</p></div>
+                        </div>
+                    </div>
+                    <div class="outgoing-msg">
+                        <p>Hello, i am good.</p>
+                        <p>What about yourself</p>
+                    </div>
+                    <div class="incomming-msg">
+                        <img src="" alt="">
+                        <div>
+                            <p>I am also good thanks</p>
+                        </div>
+                    </div>
+                    <div class="outgoing-msg">
+                        <p>Ok</p>
+                    </div>
+
+                </div>
+
+                <div class="footer">
+                    <div class="direct-msg-inner">
+                        <i class="far fa-smile"></i>
+                        <i class="fas fa-paperclip main-attach"></i>
+                        <input class="main-input" type="text" placeholder="Enter your message...">
+                        <i class="fas fa-paper-plane main-submit"></i>
+                    </div>
+                </div>
 
             </div>
-
-
-
         </div>
 
 
